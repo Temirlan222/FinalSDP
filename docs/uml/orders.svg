@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="499" height="290" preserveAspectRatio="xMinYMin meet" viewBox="0 0 499 290" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="499" height="290"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-290)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="228" width="160" height="62" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="0" y="264" width="160" height="26" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(93%,94%,90%); fill-rule: evenodd;"/>
+			<text x="54.4647216796875" y="273" style="font-family: Bold; font-size: 8.5px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,546) scale(1,-1)">GiftBoxFacade</text>
+			<text x="7" y="250" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,500) scale(1,-1)">+ quote(...)</text>
+			<text x="7" y="238" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,476) scale(1,-1)">+ placeOrder(...)</text>
+			<rect x="292" y="228" width="200" height="62" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="292" y="264" width="200" height="26" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(93%,94%,90%); fill-rule: evenodd;"/>
+			<text x="368.4361572265625" y="273" style="font-family: Bold; font-size: 8.5px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,546) scale(1,-1)">OrderReceipt</text>
+			<text x="299" y="250" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,500) scale(1,-1)">quote, order, two observers</text>
+			<text x="299" y="238" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,476) scale(1,-1)">+ advanceTo(status)</text>
+			<path d="M 160,254 L 292,254 Z" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="292 254, 286 251, 286 257" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(27%,40%,29%); fill-rule: evenodd;"/>
+			<text x="230.0" y="259.0" style="font-family: Body; font-size: 7.5px;fill: rgb(41%,45%,42%); stroke:none;" transform="translate(0,518) scale(1,-1)">creates</text>
+			<rect x="292" y="111" width="200" height="74" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="292" y="159" width="200" height="26" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(93%,94%,90%); fill-rule: evenodd;"/>
+			<text x="381.6842041015625" y="168" style="font-family: Bold; font-size: 8.5px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,336) scale(1,-1)">Order</text>
+			<text x="299" y="145" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,290) scale(1,-1)">- observers: List&lt;OrderObserver&gt;</text>
+			<text x="299" y="133" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,266) scale(1,-1)">+ subscribe / unsubscribe</text>
+			<text x="299" y="121" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,242) scale(1,-1)">+ advanceTo(status)</text>
+			<path d="M 392,228 L 392,185 Z" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="392 185, 389 191, 395 191" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(27%,40%,29%); fill-rule: evenodd;"/>
+			<text x="396.0" y="211.5" style="font-family: Body; font-size: 7.5px;fill: rgb(41%,45%,42%); stroke:none;" transform="translate(0,423) scale(1,-1)">owns</text>
+			<rect x="0" y="135" width="210" height="50" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="0" y="159" width="210" height="26" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(93%,94%,90%); fill-rule: evenodd;"/>
+			<text x="53.28613281249999" y="168" style="font-family: Bold; font-size: 8.5px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,336) scale(1,-1)">&lt;&lt;interface&gt;&gt; OrderObserver</text>
+			<text x="7" y="145" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,290) scale(1,-1)">+ onStatusChanged(id, status)</text>
+			<path d="M 292,152 L 210,152 Z" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="210 152, 216 155, 216 149" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(27%,40%,29%); fill-rule: evenodd;"/>
+			<text x="255.0" y="157.0" style="font-family: Body; font-size: 7.5px;fill: rgb(41%,45%,42%); stroke:none;" transform="translate(0,314) scale(1,-1)">notifies *</text>
+			<rect x="0" y="6" width="185" height="54" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="0" y="34" width="185" height="26" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(93%,94%,90%); fill-rule: evenodd;"/>
+			<text x="52.76416015625" y="43" style="font-family: Bold; font-size: 8.5px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,86) scale(1,-1)">CustomerNotifications</text>
+			<text x="7" y="20" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,40) scale(1,-1)">+ getMessages()</text>
+			<rect x="250" y="6" width="185" height="54" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="250" y="34" width="185" height="26" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(93%,94%,90%); fill-rule: evenodd;"/>
+			<text x="320.42822265625" y="43" style="font-family: Bold; font-size: 8.5px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,86) scale(1,-1)">PackingDesk</text>
+			<text x="257" y="20" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,40) scale(1,-1)">+ getMessages()</text>
+			<path d="M 92,60 L 75,135 Z" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; stroke-dasharray: 4, 3;"/>
+			<polygon points="75 135, 79.25214 129.8116, 73.40057 128.4853" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<path d="M 342,60 L 170,135 Z" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; stroke-dasharray: 4, 3;"/>
+			<polygon points="170 135, 176.699 135.3517, 174.3008 129.8519" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+		</g>
+	</g>
+</svg>

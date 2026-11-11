@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="499" height="265" preserveAspectRatio="xMinYMin meet" viewBox="0 0 499 265" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="499" height="265"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-265)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="180" y="203" width="140" height="62" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="180" y="239" width="140" height="26" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(93%,94%,90%); fill-rule: evenodd;"/>
+			<text x="218.1934814453125" y="248" style="font-family: Bold; font-size: 8.5px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,496) scale(1,-1)">&lt;&lt;interface&gt;&gt; Gift</text>
+			<text x="187" y="225" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,450) scale(1,-1)">+ getDescription(): String</text>
+			<text x="187" y="213" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,426) scale(1,-1)">+ getPrice(): int</text>
+			<rect x="5" y="108" width="128" height="50" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="5" y="132" width="128" height="26" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(93%,94%,90%); fill-rule: evenodd;"/>
+			<text x="34.07861328125" y="141" style="font-family: Bold; font-size: 8.5px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,282) scale(1,-1)">Book / Candle / Tea</text>
+			<text x="12" y="118" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,236) scale(1,-1)">immutable products</text>
+			<rect x="180" y="96" width="145" height="62" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="180" y="132" width="145" height="26" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(93%,94%,90%); fill-rule: evenodd;"/>
+			<text x="228.17041015625" y="141" style="font-family: Bold; font-size: 8.5px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,282) scale(1,-1)">GiftDecorator</text>
+			<text x="187" y="118" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,236) scale(1,-1)">- wrappedGift: Gift</text>
+			<text x="187" y="106" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,212) scale(1,-1)">delegates both operations</text>
+			<path d="M 69,158 L 180,205 Z" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; stroke-dasharray: 4, 3;"/>
+			<polygon points="180 205, 175.6446 199.898, 173.3052 205.4231" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<path d="M 250,158 L 250,203 Z" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; stroke-dasharray: 4, 3;"/>
+			<polygon points="250 203, 253 197, 247 197" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<path d="M 325,125 L 375,125 Z" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="375 125, 369 122, 369 128" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(27%,40%,29%); fill-rule: evenodd;"/>
+			<path d="M 375,125 L 375,230 Z" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="375 230, 378 224, 372 224" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(27%,40%,29%); fill-rule: evenodd;"/>
+			<path d="M 375,230 L 320,230 Z" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="320 230, 326 233, 326 227" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(27%,40%,29%); fill-rule: evenodd;"/>
+			<text x="351.5" y="235.0" style="font-family: Body; font-size: 7.5px;fill: rgb(41%,45%,42%); stroke:none;" transform="translate(0,470) scale(1,-1)">wraps 1</text>
+			<rect x="110" y="1" width="120" height="50" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="110" y="25" width="120" height="26" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(93%,94%,90%); fill-rule: evenodd;"/>
+			<text x="153.68896484375" y="34" style="font-family: Bold; font-size: 8.5px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,68) scale(1,-1)">GiftWrap</text>
+			<text x="117" y="11" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,22) scale(1,-1)">+ getPrice(): +200</text>
+			<rect x="300" y="1" width="120" height="50" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="300" y="25" width="120" height="26" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(93%,94%,90%); fill-rule: evenodd;"/>
+			<text x="347.436767578125" y="34" style="font-family: Bold; font-size: 8.5px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,68) scale(1,-1)">Ribbon</text>
+			<text x="307" y="11" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,22) scale(1,-1)">+ getPrice(): +100</text>
+			<path d="M 170,51 L 225,96 Z" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="225 96, 222.256 89.8787, 218.4565 94.52245" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<path d="M 360,51 L 290,96 Z" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="290 96, 296.6693 95.27899, 293.4248 90.23192" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+		</g>
+	</g>
+</svg>
