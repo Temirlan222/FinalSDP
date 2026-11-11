@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="499" height="210" preserveAspectRatio="xMinYMin meet" viewBox="0 0 499 210" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="499" height="210"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-210)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="124" width="150" height="74" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="0" y="172" width="150" height="26" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(93%,94%,90%); fill-rule: evenodd;"/>
+			<text x="48.404296875" y="181" style="font-family: Bold; font-size: 8.5px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,362) scale(1,-1)">PriceCalculator</text>
+			<text x="7" y="158" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,316) scale(1,-1)">- discountStrategy</text>
+			<text x="7" y="146" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,292) scale(1,-1)">+ setDiscountStrategy(...)</text>
+			<text x="7" y="134" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,268) scale(1,-1)">+ calculateTotal(gifts)</text>
+			<rect x="245" y="148" width="200" height="50" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="245" y="172" width="200" height="26" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(93%,94%,90%); fill-rule: evenodd;"/>
+			<text x="289.5155029296875" y="181" style="font-family: Bold; font-size: 8.5px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,362) scale(1,-1)">&lt;&lt;interface&gt;&gt; DiscountStrategy</text>
+			<text x="252" y="158" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,316) scale(1,-1)">+ applyDiscount(subtotal): int</text>
+			<path d="M 150,165 L 245,165 Z" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="245 165, 239 162, 239 168" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(27%,40%,29%); fill-rule: evenodd;"/>
+			<text x="201.5" y="170.0" style="font-family: Body; font-size: 7.5px;fill: rgb(41%,45%,42%); stroke:none;" transform="translate(0,340) scale(1,-1)">uses</text>
+			<rect x="0" y="5" width="118" height="54" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="0" y="33" width="118" height="26" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(93%,94%,90%); fill-rule: evenodd;"/>
+			<text x="38.3995361328125" y="42" style="font-family: Bold; font-size: 8.5px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,84) scale(1,-1)">NoDiscount</text>
+			<text x="7" y="19" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,38) scale(1,-1)">same total</text>
+			<path d="M 59,59 L 300,148 Z" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; stroke-dasharray: 4, 3;"/>
+			<polygon points="300 148, 295.4108 143.1072, 293.3323 148.7357" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="125" y="5" width="118" height="54" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="125" y="33" width="118" height="26" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(93%,94%,90%); fill-rule: evenodd;"/>
+			<text x="154.5467529296875" y="42" style="font-family: Bold; font-size: 8.5px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,84) scale(1,-1)">StudentDiscount</text>
+			<text x="132" y="19" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,38) scale(1,-1)">90% of subtotal</text>
+			<path d="M 184,59 L 320,148 Z" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; stroke-dasharray: 4, 3;"/>
+			<polygon points="320 148, 316.6222 142.2043, 313.3367 147.2248" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="250" y="5" width="118" height="54" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="250" y="33" width="118" height="26" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(93%,94%,90%); fill-rule: evenodd;"/>
+			<text x="280.03857421875" y="42" style="font-family: Bold; font-size: 8.5px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,84) scale(1,-1)">HolidayDiscount</text>
+			<text x="257" y="19" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,38) scale(1,-1)">80% of subtotal</text>
+			<path d="M 309,59 L 340,148 Z" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; stroke-dasharray: 4, 3;"/>
+			<polygon points="340 148, 340.8595 141.3471, 335.1933 143.3207" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="375" y="5" width="118" height="54" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="375" y="33" width="118" height="26" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(93%,94%,90%); fill-rule: evenodd;"/>
+			<text x="400.86328125" y="42" style="font-family: Bold; font-size: 8.5px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,84) scale(1,-1)">ThresholdDiscount</text>
+			<text x="382" y="19" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,38) scale(1,-1)">500 off from 5000</text>
+			<path d="M 434,59 L 360,148 Z" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; stroke-dasharray: 4, 3;"/>
+			<polygon points="360 148, 366.1428 145.3044, 361.5292 141.4684" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+		</g>
+	</g>
+</svg>
