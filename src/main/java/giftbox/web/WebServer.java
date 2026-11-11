@@ -22,7 +22,6 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-/** Local classroom adapter. Business rules remain in the Java domain classes. */
 public final class WebServer {
     private static final int MAX_BODY_BYTES = 16_384;
     private final GiftBoxFacade facade = new GiftBoxFacade();
