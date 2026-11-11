@@ -6,7 +6,6 @@ import giftbox.facade.Quote;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/** Small output-only encoder. Incoming requests use standard URL-encoded forms. */
 final class Json {
     private Json() { }
 
