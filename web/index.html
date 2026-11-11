@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GiftBox Studio — A little thought, beautifully boxed</title>
+  <link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="/" aria-label="GiftBox Studio home"><span class="brand-mark">g.</span> giftbox<span class="brand-light">studio</span></a><span class="local-badge"><span></span> LOCAL DEMO</span></header>
+<main>
+  <section class="intro"><div><p class="eyebrow">SMALL THINGS. MEANINGFUL MOMENTS.</p><h1>A little thought,<br><em>beautifully boxed.</em></h1><p class="intro-text">Pick their favourites, add your finishing touches,<br>and make an ordinary day feel special.</p></div><div class="hero-art" aria-hidden="true"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><div class="gift-lid"></div><div class="gift-body"><span></span></div><div class="gift-bow">∞</div><span class="art-note">made for someone<br>like no one else.</span></div></section>
+  <div class="workspace">
+    <section class="builder" aria-label="Gift box builder">
+      <div class="section-heading"><div><p class="eyebrow">01 / THE GOOD STUFF</p><h2>Start with their favourites</h2></div><span class="muted">Up to 12 gifts</span></div>
+      <div class="catalog">
+        <article class="product"><div class="product-art book-art" aria-hidden="true"><div class="book-shape"><span>THE ART<br>OF SLOW<br>LIVING</span><i>little everyday joys</i></div><span class="product-number">01</span></div><div class="product-info"><h3>A good read</h3><span>1,500 ₸</span></div><p>For a quiet afternoon.</p><button class="add" data-product="book" type="button">Add book <span>＋</span></button></article>
+        <article class="product"><div class="product-art candle-art" aria-hidden="true"><div class="candle-shape"><span>still.<small>AMBER & WOOD</small></span></div><span class="product-number">02</span></div><div class="product-info"><h3>A warm glow</h3><span>800 ₸</span></div><p>A little calm, on demand.</p><button class="add" data-product="candle" type="button">Add candle <span>＋</span></button></article>
+        <article class="product"><div class="product-art tea-art" aria-hidden="true"><div class="tea-shape"><span>the daily<br><b>pause</b><small>TEA COLLECTION</small></span></div><span class="product-number">03</span></div><div class="product-info"><h3>A slower moment</h3><span>1,200 ₸</span></div><p>Something lovely to steep.</p><button class="add" data-product="tea" type="button">Add tea <span>＋</span></button></article>
+      </div>
+      <div class="section-heading second"><div><p class="eyebrow">02 / MAKE IT PERSONAL</p><h2>The finishing touches</h2></div><button class="text-button" id="sample" type="button">Try a sample box ↗</button></div>
+      <div id="items" class="selected-items" aria-live="polite"><div class="empty-state"><span>✧</span><p>Your box starts here.</p><small>Add something above, then choose its wrapping.</small></div></div>
+      <div class="personal"><label>Who is it for?<input id="recipient" maxlength="60" placeholder="Recipient’s name" autocomplete="off"></label><label>A note to go with it <span class="muted">(optional)</span><textarea id="message" maxlength="200" rows="2" placeholder="A few words can mean a lot."></textarea></label></div>
+    </section>
+    <aside class="summary" aria-labelledby="summary-title"><p class="eyebrow">YOUR LITTLE COLLECTION</p><h2 id="summary-title">Inside your box</h2><p id="item-count" class="muted">No gifts selected yet</p><div class="summary-rule"></div><label class="discount-label" for="discount">Choose your offer</label><select id="discount"><option value="none">No discount</option><option value="student">Student · 10% off</option><option value="holiday">Holiday · 20% off</option><option value="threshold">Big box · 500 ₸ off from 5,000 ₸</option></select><p id="offer-note" class="small-note">One offer per box. Wrapping is included before the discount.</p><dl><div><dt>Gifts & finishing touches</dt><dd id="subtotal">—</dd></div><div class="saving"><dt>Your saving</dt><dd id="saving">—</dd></div><div class="total"><dt>Total</dt><dd id="total">—</dd></div></dl><p id="feedback" role="status">Add a gift and a recipient to see your total.</p><button class="primary" id="place" type="button" disabled>Create my gift box <span>→</span></button><p class="demo-note">A classroom demo. No payment is taken.<br>Orders last until the server restarts.</p></aside>
+  </div>
+  <section id="order" class="order-panel" hidden aria-labelledby="order-title"><div class="section-heading"><div><p class="eyebrow">03 / ON ITS WAY TO A SMILE</p><h2 id="order-title">Your box is taking shape</h2><p id="order-id" class="muted"></p></div><span id="order-status" class="status-pill">CREATED</span></div><p id="order-summary"></p><div class="order-actions"><button class="primary" id="advance" type="button">Start packing →</button><button class="text-button" id="new-box" type="button">Create another box</button></div><div class="notifications"><div><h3>For the recipient</h3><ul id="customer-events"><li>Updates appear when packing starts.</li></ul></div><div><h3>At the packing desk</h3><ul id="packing-events"><li>Ready to receive status updates.</li></ul></div></div></section>
+</main><footer><span class="brand">giftbox<span class="brand-light">studio</span></span><span>Thoughtfully put together. · FinalSDP</span></footer>
+</body></html>
