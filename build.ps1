@@ -1,6 +1,8 @@
 param(
     [switch]$Test,
-    [switch]$Run
+    [switch]$Run,
+    [switch]$Web,
+    [int]$Port = 8080
 )
 
 $ErrorActionPreference = 'Stop'
@@ -28,6 +30,12 @@ if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
 if ($Test) {
     & $javaPath -cp $outputDir giftbox.PartTests
+    if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+    & $javaPath -cp $outputDir giftbox.ProjectTests
+    if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+}
+if ($Web) {
+    & $javaPath -cp $outputDir giftbox.web.WebServer $Port (Join-Path $PSScriptRoot 'web')
     if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 }
 if ($Run) {
