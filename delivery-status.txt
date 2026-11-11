@@ -1,0 +1,13 @@
+FinalSDP verification record - 11 November 2026
+Repository: https://github.com/Temirlan222/FinalSDP (private)
+Java checks: 24 passed, 0 failed.
+HTTP integration: 20 passed, 0 failed.
+Browser: student 2340 KZT; threshold 4500 KZT; CREATED -> PACKING -> READY; both observer histories verified.
+Mobile: 390 px viewport, 375 px client/content widths, no horizontal overflow.
+PDF report: 12 pages, team names and live GitHub hyperlink checked.
+UML PDF: 3 pages. Requirements checklist: 3 pages.
+Rendered PDF pages visually inspected; diagram endpoints and screenshot layout corrected.
+Source ZIP extracted into a separate directory; 24 Java checks and Demo passed there.
+Source/test/assets/docs package excludes compiled classes, .git metadata, .env and private key files.
+GitHub final revision/readback verification is recorded in the final delivery message and the separate verification.json delivered with the archives.
+Not certified: independent implementation by every student, lecturer repository access, Moodle upload and oral defense.
