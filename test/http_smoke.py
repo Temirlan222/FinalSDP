@@ -1,4 +1,3 @@
-"""Integration checks against a running local server; Python 3 standard library only."""
 import json
 import sys
 from urllib.error import HTTPError

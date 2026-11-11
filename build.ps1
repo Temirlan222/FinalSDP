@@ -7,7 +7,6 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
-# Prefer an explicitly selected JDK. Avoid mixing javac with a different java.
 $jdkRoot = if ($env:JDK_HOME) { $env:JDK_HOME } else { $env:JAVA_HOME }
 if ($jdkRoot) {
     $javacPath = Join-Path $jdkRoot 'bin\javac.exe'

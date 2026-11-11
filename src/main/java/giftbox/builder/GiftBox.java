@@ -5,16 +5,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-/** Immutable result; the reusable builder owns the temporary mutable state. */
 public final class GiftBox {
     private final String recipient;
     private final String message;
     private final List<Gift> gifts;
 
-    private GiftBox(Builder builder) {
-        recipient = builder.recipient;
-        message = builder.message;
-        gifts = List.copyOf(builder.gifts);
+    private GiftBox(Builder draft) {
+        recipient = draft.recipient;
+        message = draft.message;
+        gifts = List.copyOf(draft.gifts);
     }
 
     public String getRecipient() { return recipient; }

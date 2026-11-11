@@ -17,10 +17,10 @@ public abstract class GiftDecorator implements Gift {
 
     @Override
     public int getPrice() {
-        int price = wrappedGift.getPrice();
-        if (price < 0) {
+        int cost = wrappedGift.getPrice();
+        if (cost < 0) {
             throw new IllegalArgumentException("Gift price cannot be negative");
         }
-        return price;
+        return cost;
     }
 }

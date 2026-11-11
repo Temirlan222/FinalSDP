@@ -1,4 +1,4 @@
-# Стартовый контракт GiftBox
+# Контракт компонентов GiftBox
 
 Контракт реализован в общем проекте со всеми шестью паттернами. Исходные интерфейсы сохранены. Изменения общих методов согласовывайте и проверяйте вместе.
 
@@ -70,7 +70,7 @@ Gift decorated = new Ribbon(new GiftWrap(originalGift));
 
 ## Границы остальных частей
 
-**Участник 2: Factory Method + Builder.** Создаваемые подарки реализуют `Gift`. В Factory Method конкретные подклассы создателя переопределяют метод создания продукта. Один `switch`, выбирающий класс подарка, сам по себе является Simple Factory и не доказывает реализацию Factory Method. Builder собирает целый набор; Decorator добавляет оформление отдельному подарку.
+**Factory Method + Builder.** Создаваемые подарки реализуют `Gift`. В Factory Method конкретные подклассы создателя переопределяют метод создания продукта. Один `switch`, выбирающий класс подарка, сам по себе является Simple Factory и не доказывает реализацию Factory Method. Builder собирает целый набор; Decorator добавляет оформление отдельному подарку.
 
 `giftbox.builder.GiftBox#getGifts(): List<Gift>` возвращает неизменяемый список. GiftBox.Builder: forRecipient(String), withMessage(String), addGift(Gift), build(). Имя: 1–60 символов после trim; сообщение: до 200; набор: 1–12 подарков. Копируется список, не сами Gift: встроенные продукты/декораторы неизменяемы, внешние реализации Gift должны сохранять стабильную цену/описание. Цены считает PriceCalculator.
 
@@ -81,3 +81,4 @@ Gift decorated = new Ribbon(new GiftWrap(originalGift));
 **HTTP:** POST /api/quote, /api/orders, /api/status, формат application/x-www-form-urlencoded. Для первых двух: recipient, message, discount=none/student/holiday/threshold, повторяющийся item=book:1:0 (тип:упаковка:лента). Для статуса: id и status=PACKING/READY. Ответы JSON; 400 ввод, 404 неизвестный заказ, 405 метод, 413 размер, 415 формат. Клиент отправляет выбор, а сервер заново считает цены. Запросы обслуживаются последовательно, только 127.0.0.1.
 
 **Запуск:** giftbox.web.WebServer соединяет приложение и браузер. giftbox.demo.Demo оставлен как изолированная демонстрация двух паттернов с ExampleGift; общий web-сценарий использует фабрики.
+

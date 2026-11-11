@@ -15,7 +15,6 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.UUID;
 
-/** One entry point for assembling, pricing and placing a gift-box order. */
 public final class GiftBoxFacade {
     private final Map<String, GiftCreator> creators;
 
@@ -35,8 +34,10 @@ public final class GiftBoxFacade {
             builder.addGift(createDecoratedGift(Objects.requireNonNull(selection, "selection")));
         }
         GiftBox box = builder.build();
-        PriceCalculator calculator = new PriceCalculator(strategy);
-        return new Quote(box, calculator.calculateSubtotal(box.getGifts()), calculator.calculateTotal(box.getGifts()));
+        PriceCalculator prices = new PriceCalculator(strategy);
+        return new Quote(box,
+            prices.calculateSubtotal(box.getGifts()),
+            prices.calculateTotal(box.getGifts()));
     }
 
     public OrderReceipt placeOrder(String recipient, String message, List<GiftSelection> selections,
@@ -46,11 +47,15 @@ public final class GiftBoxFacade {
     }
 
     private Gift createDecoratedGift(GiftSelection selection) {
-        GiftCreator creator = creators.get(selection.getProduct());
-        if (creator == null) { throw new IllegalArgumentException("Unknown gift: " + selection.getProduct()); }
-        Gift gift = creator.createGift();
-        if (selection.isWrapped()) { gift = new GiftWrap(gift); }
-        if (selection.hasRibbon()) { gift = new Ribbon(gift); }
-        return gift;
+        GiftCreator factory = creators.get(selection.getProduct());
+        if (factory == null) {
+            throw new IllegalArgumentException("Unknown gift: " + selection.getProduct());
+        }
+        
+        Gift item = factory.createGift();
+        if (selection.isWrapped()) { item = new GiftWrap(item); }
+        if (selection.hasRibbon()) { item = new Ribbon(item); }
+        
+        return item;
     }
 }
