@@ -18,23 +18,24 @@ public final class PriceCalculator {
 
     public int calculateSubtotal(List<? extends Gift> gifts) {
         Objects.requireNonNull(gifts, "gifts");
-        int subtotal = 0;
+        int sum = 0;
+
         for (Gift gift : gifts) {
-            int price = Objects.requireNonNull(gift, "gift").getPrice();
-            if (price < 0) {
+            int cost = Objects.requireNonNull(gift, "gift").getPrice();
+            if (cost < 0) {
                 throw new IllegalArgumentException("Gift price cannot be negative");
             }
-            subtotal = Math.addExact(subtotal, price);
+            sum = Math.addExact(sum, cost);
         }
-        return subtotal;
+        return sum;
     }
 
     public int calculateTotal(List<? extends Gift> gifts) {
         int subtotal = calculateSubtotal(gifts);
-        int total = discountStrategy.applyDiscount(subtotal);
-        if (total < 0 || total > subtotal) {
+        int result = discountStrategy.applyDiscount(subtotal);
+        if (result < 0 || result > subtotal) {
             throw new IllegalArgumentException("Discount result must be between zero and subtotal");
         }
-        return total;
+        return result;
     }
 }
