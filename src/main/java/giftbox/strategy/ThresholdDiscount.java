@@ -2,7 +2,6 @@ package giftbox.strategy;
 
 import giftbox.api.DiscountStrategy;
 
-/** A fixed saving, available only once the order reaches the threshold. */
 public final class ThresholdDiscount implements DiscountStrategy {
     public static final int MINIMUM_SUBTOTAL = 5000;
     public static final int SAVING = 500;
