@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="499" height="260" preserveAspectRatio="xMinYMin meet" viewBox="0 0 499 260" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="499" height="260"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-260)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="175" y="198" width="150" height="62" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="175" y="234" width="150" height="26" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(93%,94%,90%); fill-rule: evenodd;"/>
+			<text x="206.3275146484375" y="243" style="font-family: Bold; font-size: 8.5px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,486) scale(1,-1)">&lt;&lt;abstract&gt;&gt; GiftCreator</text>
+			<text x="182" y="220" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,440) scale(1,-1)">+ createGift(): Gift</text>
+			<text x="182" y="208" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,416) scale(1,-1)"># createProduct(): Gift</text>
+			<rect x="0" y="100" width="155" height="50" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="0" y="124" width="155" height="26" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(93%,94%,90%); fill-rule: evenodd;"/>
+			<text x="55.241455078125" y="133" style="font-family: Bold; font-size: 8.5px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,266) scale(1,-1)">BookCreator</text>
+			<text x="7" y="110" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,220) scale(1,-1)"># createProduct(): Gift</text>
+			<path d="M 77,150 L 205,198 Z" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="205 198, 200.4354 193.0843, 198.3287 198.7022" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="167" y="100" width="155" height="50" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="167" y="124" width="155" height="26" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(93%,94%,90%); fill-rule: evenodd;"/>
+			<text x="219.14111328125" y="133" style="font-family: Bold; font-size: 8.5px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,266) scale(1,-1)">CandleCreator</text>
+			<text x="174" y="110" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,220) scale(1,-1)"># createProduct(): Gift</text>
+			<path d="M 244,150 L 250,198 Z" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="250 198, 252.2326 191.6742, 246.279 192.4184" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="334" y="100" width="155" height="50" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="334" y="124" width="155" height="26" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(93%,94%,90%); fill-rule: evenodd;"/>
+			<text x="391.8914794921875" y="133" style="font-family: Bold; font-size: 8.5px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,266) scale(1,-1)">TeaCreator</text>
+			<text x="341" y="110" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,220) scale(1,-1)"># createProduct(): Gift</text>
+			<path d="M 411,150 L 295,198 Z" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="295 198, 301.6912 198.4779, 299.397 192.9338" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="0" y="3" width="235" height="54" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="0" y="31" width="235" height="26" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(93%,94%,90%); fill-rule: evenodd;"/>
+			<text x="90.493408203125" y="40" style="font-family: Bold; font-size: 8.5px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,80) scale(1,-1)">GiftBox.Builder</text>
+			<text x="7" y="17" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,34) scale(1,-1)">forRecipient / withMessage / addGift</text>
+			<rect x="300" y="3" width="195" height="54" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="300" y="31" width="195" height="26" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(93%,94%,90%); fill-rule: evenodd;"/>
+			<text x="384.31005859375" y="40" style="font-family: Bold; font-size: 8.5px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,80) scale(1,-1)">GiftBox</text>
+			<text x="307" y="17" style="font-family: Body; font-size: 8px;fill: rgb(14%,24%,20%); stroke:none;" transform="translate(0,34) scale(1,-1)">recipient, message, List&lt;Gift&gt;</text>
+			<path d="M 235,32 L 300,32 Z" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<polygon points="300 32, 294 29, 294 35" style="stroke: rgb(27%,40%,29%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(27%,40%,29%); fill-rule: evenodd;"/>
+			<text x="271.5" y="37.0" style="font-family: Body; font-size: 7.5px;fill: rgb(41%,45%,42%); stroke:none;" transform="translate(0,74) scale(1,-1)">builds</text>
+		</g>
+	</g>
+</svg>

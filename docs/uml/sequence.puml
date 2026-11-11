@@ -1,0 +1,53 @@
+@startuml
+title GiftBox Studio - complete order scenario
+actor User
+participant Browser
+participant WebServer
+participant GiftBoxFacade as Facade
+participant GiftCreator as Creator
+participant "GiftWrap / Ribbon" as Decorator
+participant "GiftBox.Builder" as Builder
+participant PriceCalculator as Calculator
+participant DiscountStrategy as Strategy
+participant OrderReceipt as Receipt
+participant Order
+participant CustomerNotifications as Customer
+participant PackingDesk as Desk
+User -> Browser : choose gifts, wrapping and offer
+Browser -> WebServer : POST /api/orders (form selections)
+WebServer -> Facade : placeOrder(..., strategy)
+Facade -> Facade : quote(...)
+loop each selection
+  Facade -> Creator : createGift()
+  Creator -> Creator : createProduct() [overridden]
+  Creator --> Facade : Gift
+  opt wrap / ribbon selected
+    Facade -> Decorator : new wrapper(Gift)
+    Decorator --> Facade : Gift
+  end
+  Facade -> Builder : addGift(Gift)
+end
+Facade -> Builder : build()
+Builder --> Facade : GiftBox
+Facade -> Calculator : calculateSubtotal(gifts)
+Calculator --> Facade : subtotal
+Facade -> Calculator : calculateTotal(gifts)
+Calculator -> Strategy : applyDiscount(subtotal)
+Strategy --> Calculator : total
+Calculator --> Facade : total
+Facade -> Receipt : new OrderReceipt(id, Quote)
+Receipt -> Order : new Order(id)
+Receipt -> Order : subscribe(Customer)
+Receipt -> Order : subscribe(Desk)
+Facade --> WebServer : OrderReceipt (CREATED)
+WebServer --> Browser : JSON receipt
+loop PACKING, then READY
+  User -> Browser : advance status
+  Browser -> WebServer : POST /api/status
+  WebServer -> Receipt : advanceTo(status)
+  Receipt -> Order : advanceTo(status)
+  Order -> Customer : onStatusChanged(id, status)
+  Order -> Desk : onStatusChanged(id, status)
+  WebServer --> Browser : JSON with both message histories
+end
+@enduml

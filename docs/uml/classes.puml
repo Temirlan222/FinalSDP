@@ -1,0 +1,118 @@
+@startuml
+title GiftBox Studio - six coordinated design patterns
+skinparam classAttributeIconSize 0
+interface Gift {
+  +getDescription(): String
+  +getPrice(): int
+}
+abstract class GiftCreator {
+  +createGift(): Gift
+  #createProduct(): Gift
+}
+class BookCreator
+class CandleCreator
+class TeaCreator
+class Book
+class Candle
+class Tea
+GiftCreator <|-- BookCreator
+GiftCreator <|-- CandleCreator
+GiftCreator <|-- TeaCreator
+Gift <|.. Book
+Gift <|.. Candle
+Gift <|.. Tea
+BookCreator ..> Book : creates
+CandleCreator ..> Candle : creates
+TeaCreator ..> Tea : creates
+abstract class GiftDecorator {
+  -wrappedGift: Gift
+}
+class GiftWrap
+class Ribbon
+Gift <|.. GiftDecorator
+GiftDecorator --> "1" Gift : wraps
+GiftDecorator <|-- GiftWrap
+GiftDecorator <|-- Ribbon
+interface DiscountStrategy {
+  +applyDiscount(subtotal: int): int
+}
+class NoDiscount
+class StudentDiscount
+class HolidayDiscount
+class ThresholdDiscount
+class PriceCalculator {
+  -discountStrategy: DiscountStrategy
+  +setDiscountStrategy(strategy)
+  +calculateSubtotal(gifts): int
+  +calculateTotal(gifts): int
+}
+DiscountStrategy <|.. NoDiscount
+DiscountStrategy <|.. StudentDiscount
+DiscountStrategy <|.. HolidayDiscount
+DiscountStrategy <|.. ThresholdDiscount
+PriceCalculator --> DiscountStrategy
+PriceCalculator ..> Gift
+class GiftBox {
+  -recipient: String
+  -message: String
+  -gifts: List<Gift>
+  +getGifts(): List<Gift>
+}
+class "GiftBox.Builder" as Builder {
+  +forRecipient(name): Builder
+  +withMessage(text): Builder
+  +addGift(gift): Builder
+  +build(): GiftBox
+}
+Builder ..> GiftBox : builds
+GiftBox o-- "1..12" Gift
+class GiftSelection
+class Quote
+class GiftBoxFacade {
+  +quote(recipient, message, selections, strategy): Quote
+  +placeOrder(recipient, message, selections, strategy): OrderReceipt
+}
+GiftBoxFacade ..> GiftCreator
+GiftBoxFacade ..> GiftWrap
+GiftBoxFacade ..> Ribbon
+GiftBoxFacade ..> Builder
+GiftBoxFacade ..> PriceCalculator
+GiftBoxFacade ..> GiftSelection
+GiftBoxFacade ..> Quote
+class OrderReceipt {
+  +advanceTo(status)
+  +getCustomerMessages()
+  +getPackingMessages()
+}
+class Order {
+  -status: OrderStatus
+  -observers: List<OrderObserver>
+  +subscribe(observer)
+  +unsubscribe(observer)
+  +advanceTo(status)
+}
+interface OrderObserver {
+  +onStatusChanged(orderId, status)
+}
+class CustomerNotifications
+class PackingDesk
+enum OrderStatus {
+  CREATED
+  PACKING
+  READY
+}
+GiftBoxFacade ..> OrderReceipt : creates
+OrderReceipt *-- Order
+OrderReceipt *-- CustomerNotifications
+OrderReceipt *-- PackingDesk
+OrderReceipt --> Quote
+Quote --> GiftBox
+Order --> OrderStatus
+Order --> "*" OrderObserver : notifies
+OrderObserver <|.. CustomerNotifications
+OrderObserver <|.. PackingDesk
+note bottom of Order
+  Synchronous in-app notifications.
+  Only CREATED -> PACKING -> READY.
+end note
+@enduml
