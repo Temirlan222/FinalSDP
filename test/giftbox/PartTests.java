@@ -166,7 +166,6 @@ public final class PartTests {
         throw new AssertionError("Expected " + type.getSimpleName());
     }
 
-    // A foreign product implementation: tests must not depend on a specific factory.
     private static final class OtherGift implements Gift {
         private final String description;
         private final int price;
