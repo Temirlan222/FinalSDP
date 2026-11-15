@@ -1,0 +1,9 @@
+# Agreed backend review responsibility; not historical line-by-line authorship.
+# /web/ is the shared browser UI and is intentionally not assigned here.
+/src/main/java/giftbox/observer/ @muryashin
+/src/main/java/giftbox/facade/ @muryashin
+/src/main/java/giftbox/web/ @muryashin
+/test/http_smoke.py @muryashin
+
+# ProjectTests.java mixes backend and other participants' checks.
+# Its method-level responsibilities are documented in TEAM.md.
